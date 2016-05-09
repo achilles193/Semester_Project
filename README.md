@@ -4,7 +4,9 @@ Exploration and Implementation of hybrid statistical Learning Methods
 
 #Team Members:
 Shailesh Jain
+
 Arsh Anand
+
 Ankit Yadav
 
 #Objective:
