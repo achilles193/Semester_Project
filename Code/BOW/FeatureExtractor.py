@@ -2,7 +2,7 @@ import os
 import sys
 
 fout=open('Dataset.csv','w')
-fdict=open('Neutral_Words_5.txt')
+fdict=open('../Neutral_Words/Neutral_Words_5.txt')
 ind=0
 dict_words_index={}
 dict_words=[]
@@ -17,7 +17,8 @@ outline+='Present_Condition'
 fout.write(outline)
 fout.write('\n')
 
-mypath='/home/arsh/Desktop/Course_Project/Training_Scripts/'
+#mypath='/home/arsh/Desktop/Course_Project/Training_Scripts/'
+mypath='./Training_Scripts/'
 conditions=['sadness','anxiety','suicidal-ideation','frustration','depression-emotion']
 
 for present_cond in conditions:

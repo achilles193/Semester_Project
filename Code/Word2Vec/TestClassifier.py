@@ -2,11 +2,15 @@ import os
 import sys
 import gensim,logging
 
-mypath='/home/arsh/Desktop/Course_Project/'
-dict_path='/home/arsh/Desktop/Course_Project/Dictionary_Words/'
+#mypath='/home/arsh/Desktop/Course_Project/'
+#dict_path='/home/arsh/Desktop/Course_Project/Dictionary_Words/'
+mypath='../Parsing/'
+dict_path='../Dictionary_Words/'
+
 conditions=['sadness','anxiety','suicidal-ideation','frustration','depression-emotion']
 
-model = gensim.models.Word2Vec.load('/home/arsh/Desktop/Course_Project/W2VModel/Overall_model_5')
+#model = gensim.models.Word2Vec.load('/home/arsh/Desktop/Course_Project/W2VModel/Overall_model_5')
+model = gensim.models.Word2Vec.load('../Word2Vec/Overall_model_5')
 
 similar={}
 test_file="test.txt"

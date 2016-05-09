@@ -1,7 +1,8 @@
 import os
 import sys
 
-path='/home/arsh/Desktop/Course_Project/Neutral_Words/'
+#path='/home/arsh/Desktop/Course_Project/Neutral_Words/'
+path='../Neutral_Words/'
 
 union_of_words=set()
 for dirpath,dirnames,filenames in os.walk(path):

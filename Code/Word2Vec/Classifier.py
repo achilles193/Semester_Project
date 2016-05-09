@@ -2,7 +2,8 @@ import os
 import sys
 import gensim,logging
 
-mypath='/home/arsh/Desktop/Course_Project/'
+#mypath='/home/arsh/Desktop/Course_Project/'
+mypath='../Parsing/'
 conditions=['sadness','anxiety','suicidal-ideation','frustration','depression-emotion']
 
 #model = gensim.models.Word2Vec.load('/home/arsh/Desktop/Course_Project/W2VModel/Overall_model_5')
@@ -33,7 +34,8 @@ test_files_map['suicidal-ideation']=test_files[2]
 test_files_map['frustration']=test_files[3]
 test_files_map['depression-emotion']=test_files[4]
 
-dict_path='/home/arsh/Desktop/Course_Project/Dictionary_Words/'
+#dict_path='/home/arsh/Desktop/Course_Project/Dictionary_Words/'
+dict_path='../Dictionary_Words/'
 
 for present_cond1 in conditions:
 	print present_cond1

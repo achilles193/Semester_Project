@@ -7,7 +7,8 @@ stop_words = get_stop_words('english')
 stop_words.append('client')
 stop_words.append('therapist')
 
-mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+#mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+mypath='../Parsing/Transcripts/'
 conditions=['sadness','anxiety','suicidal-ideation','frustration','depression-emotion']
 
 for present_cond in conditions:

@@ -1,7 +1,8 @@
 import os
 import gensim,logging
 
-mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+#mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+mypath='../Parsing/Transcripts/'
 conditions=['sadness','anxiety','suicidal-ideation','frustration','depression-emotion']
 
 
@@ -31,6 +32,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 sentences = MySentences('/some/directory')
 model=gensim.models.Word2Vec(sentences, min_count=1,size=200)
-model.save('/home/arsh/Desktop/model')
+#model.save('/home/arsh/Desktop/model')
+model.save('../Word2Vec/model')
 
 print model.similarity('happy', 'pair')

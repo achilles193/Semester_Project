@@ -6,13 +6,15 @@ stop_words = get_stop_words('english')
 stop_words.append('client')
 stop_words.append('therapist')
 
-mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+#mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+mypath='../Parsing/Transcripts/'
 conditions=['sadness','anxiety','suicidal-ideation','frustration','depression-emotion']
 
 for present_cond in conditions:
 	freq_map={}
 	path=mypath+present_cond+'/'
-	dest_path='/home/arsh/Desktop/Course_Project/Frequency_Count/'
+	#dest_path='/home/arsh/Desktop/Course_Project/Frequency_Count/'
+	dest_path='../Word_Count/'
 	for dirpath,dirnames,filenames in os.walk(path):
 		for files in filenames:
 			fin=open(path+files)

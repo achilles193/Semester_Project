@@ -1,7 +1,8 @@
 import os
 import operator
 
-mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+#mypath='/home/arsh/Desktop/Course_Project/Transcripts/'
+mypath='../Parsing/Transcripts/'
 conditions=['sadness','anxiety','suicidal-ideation','frustration','depression-emotion']
 
 freq_map={}
